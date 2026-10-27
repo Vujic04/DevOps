@@ -41,7 +41,7 @@ public class BookController {
     public ResponseEntity deleteBook(@PathVariable("bookId") Long id) {
         try {
             bookService.deleteBook(id);
-            return ResponseEntity.ok("Successfully deleted book!");
+            return ResponseEntity.ok("Book deleted!");
         } catch (Exception ex) {
             return new ResponseEntity(ex.getMessage(), HttpStatus.NOT_FOUND);
         }

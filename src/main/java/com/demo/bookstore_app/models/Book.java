@@ -27,7 +27,10 @@ public class Book {
         this.bookGenre = bookGenre;
         this.publishingYear = publishingYear;
     }
-    public Long getBookId() {
+    public Book(long l, String string, int i, String string2, String string3, int j) {
+		// TODO Auto-generated constructor stub
+	}
+	public Long getBookId() {
         return bookId;
     }
 
